@@ -11,6 +11,15 @@
 4) Your Token Address on the Ropsten Network
    1) Contract Address=0x19603F963Ba964FE99Fdc2ce2Dce2E026ccA0e79
    2) I could not get ETH on Rinkeby network without trading it for PII data
+5) To run the project please create a `.env` file with the following configuration
+```
+INFURA_KEY=36ec5...
+MNEMONIC=raise ... retire
+```
+6) Run `npm install` on the top level to install the needed dev dependencies then you can jump to `truffle develop`
+
+
+_________________
 
 ### ToDo
 This Starter Code has already implemented the functionalities you implemented in the StarNotary (Version 2) exercise, and have comments in all the files you need to implement your tasks.
