@@ -21,6 +21,7 @@
  * phrase from a file you've .gitignored so it doesn't accidentally become public.
  *
  */
+require('dotenv').config();
 
 const HDWalletProvider = require("truffle-hdwallet-provider");
 const infuraKey = process.env.INFURA_KEY;
@@ -66,7 +67,7 @@ module.exports = {
       provider: () =>
         new HDWalletProvider(
           mnemonic,
-          `https://ropsten.infura.io/${infuraKey}`
+          `https://ropsten.infura.io/v3/${infuraKey}`
         ),
       network_id: 3, // Ropsten's id
       gas: 5500000, // Ropsten has a lower block limit than mainnet
